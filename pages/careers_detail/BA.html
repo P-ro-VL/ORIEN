@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Analyst - ORIEN</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/login_form.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/font.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../css/pages/careers_detail.css"
+    />
+
+    <script src="../../src/popup.js"></script>
+
+    <script src="../../src/bootstrap.js"></script>
+
+    <style>
+      body {
+        background-color: #242424;
+      }
+
+      .primary-color {
+        color: #832f99;
+      }
+    </style>
+  </head>
+  <body>
+    <!--NAV BAR-->
+    <nav class="flex space-between cross-center">
+      <img src="../../assets/logo.svg" class="cursor-pointer" />
+
+      <div id="nav-items" class="flex space-evenly">
+        <a class="parent-hover cursor-pointer" href="/">
+          <p>TRANG CHỦ</p>
+          <div id="nav-items-underline"></div>
+        </a>
+        <a
+          class="parent-hover cursor-pointer"
+          href="../../pages/careers/DA.html"
+        >
+          <p>NGÀNH NGHỀ</p>
+          <div id="nav-items-underline" class="display-on-parent-hover"></div>
+        </a>
+        <div class="parent-hover cursor-pointer">
+          <p>VIỆC LÀM</p>
+          <div id="nav-items-underline" class="display-on-parent-hover"></div>
+        </div>
+        <div class="parent-hover cursor-pointer">
+          <p>LIÊN HỆ</p>
+          <div id="nav-items-underline" class="display-on-parent-hover"></div>
+        </div>
+      </div>
+
+      <img
+        src="../../assets/user.svg"
+        class="cursor-pointer"
+        onclick="showPopup('login-form')"
+      />
+    </nav>
+
+    <!--LOGIN FORM-->
+    <div id="login-form-overlay" class="overlay no-margin no-padding">
+      <form
+        id="login-form"
+        class="column full-width text-center vertical-spacing-1 center"
+      >
+        <h3 class="center text-center no-margin">ĐĂNG NHẬP</h3>
+        <input
+          id="username"
+          placeholder="Tên đăng nhập"
+          required
+          class="input center"
+        />
+        <input
+          id="password"
+          placeholder="Mật khẩu"
+          type="password"
+          required
+          class="input"
+        />
+        <button id="login-button" type="submit" class="button cursor-pointer">
+          Đăng nhập
+        </button>
+        <p class="underline cursor-pointer no-margin" onclick="showRegister()">
+          Chưa có tài khoản? Đăng ký ngay.
+        </p>
+        <p class="underline cursor-pointer no-margin">Quên mật khẩu?</p>
+        <img
+          class="max-content opacity-10 cursor-pointer"
+          src="./assets/icons/exit.svg"
+          onclick="closePopup('login-form')"
+        />
+      </form>
+    </div>
+
+    <!--REGISTER FORM-->
+    <div id="register-form-overlay" class="overlay no-margin no-padding">
+      <form
+        id="register-form"
+        class="column full-width text-center vertical-spacing-1 center"
+      >
+        <h3 class="center text-center no-margin">ĐĂNG KÝ TÀI KHOẢN</h3>
+        <input
+          id="username"
+          placeholder="Tên đăng nhập"
+          required
+          class="input center"
+        />
+        <input id="email" placeholder="Email" required class="input center" />
+        <input
+          id="password"
+          placeholder="Mật khẩu"
+          required
+          class="input center"
+          type="password"
+        />
+        <input
+          id="repassword"
+          placeholder="Mật khẩu"
+          required
+          class="input center"
+          type="password"
+        />
+        <button
+          id="register-button"
+          type="submit"
+          class="button cursor-pointer"
+        >
+          ĐĂNG KÝ
+        </button>
+        <p class="underline cursor-pointer no-margin" onclick="showLogin()">
+          Quay về đăng nhập
+        </p>
+        <img
+          class="max-content opacity-10 cursor-pointer"
+          src="./assets/icons/exit.svg"
+          onclick="closePopup('register-form')"
+        />
+      </form>
+    </div>
+
+    <script>
+      function showRegister() {
+        closePopup('login-form');
+        showPopup('register-form');
+      }
+
+      function showLogin() {
+        closePopup('register-form');
+        showPopup('login-form');
+      }
+    </script>
+
+    <div id="content-div">
+      <a id="back_button" class="cursor-pointer" href="/pages/careers/BA.html">
+        <img src="../../assets/icons/arrow-left-circle.png" />
+      </a>
+
+      <div id="content" class="column">
+        <h1 class="primary-color">BUSINESS ANALYST</h1>
+        <h2 class="primary-color">CHUYÊN VIÊN PHÂN TÍCH NGHIỆP VỤ</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/-psusaPKLg0?si=78R6xbgyW2p2qmes"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <p class="column cross-center">
+          IT Business Analyst là khái niệm được tìm kiếm rất phổ biến trong
+          những năm trở lại đây. Không chỉ những người trẻ mà ngay cả những
+          người đã và đang hoạt động trong các lĩnh vực, ngành nghề khác cũng
+          rất quan tâm. Nếu đây là chủ đề mà bạn tìm kiếm, hãy dành ra ít phút
+          để xem tiếp bài viết này.<br /><br /><b>1. IT Business Analyst là ai?</b><br />IT
+          Business Analyst viết tắt của Information Technology Business Analyst
+          (IT BA) là từ dùng để chỉ chức danh chuyên viên phân tích nghiệp vụ
+          phần mềm. Tuy nhiên, không chỉ dừng lại ở đó, nghề BA tại Việt Nam
+          hiện nay rất phát triển và công việc của một BA không chỉ gói gọn
+          trong lĩnh vực công nghệ.<br /><br /><img width="50%" src="https://drive.google.com/uc?export=download&id=12sutlJ7uwFOUyahqJIiLDQlANWNRjzpd"/><b><i>IT Business Analyst là người kết
+          nối khách hàng và bộ phận IT</b></i><br /><br />Từ đó, bạn có thể gặp các định
+          nghĩa khác về IT BA như chuyên viên phân tích nghiệp vụ, phân tích
+          kinh doanh, phân tích yêu cầu người dùng,…. Điều này không hề khó hiểu
+          khi họ hoạt động trong các lĩnh vực khác nhau và tập trung chuyên môn,
+          kiến thức cho một ngành nghề nhất định. Để dễ hình dung hơn, dưới đây
+          là các công việc cụ thể mà một IT BA sẽ làm.<br /><br /><b>2. IT Business
+          Analyst làm những công việc gì?</b><br />Tổng kết một cách ngắn gọn nhất
+          công việc của một IT BA chính là làm cầu nối giữa khách hàng với doanh
+          nghiệp để giải quyết các vấn đề của khách hàng. Cụ thể hơn, quy trình
+          làm việc của một IT BA có thể gói gọn trong 3 bước sau:<br /><br />• Làm
+          việc với khách hàng:<br />Người IT BA sẽ tiếp nhận các yêu cầu từ
+          khách hàng, bao gồm việc lắng nghe những vấn đề, phân tích, gợi ý, đề
+          xuất giải pháp cho các vấn đề đó. Tuy nhiên, không phải lúc nào khách
+          hàng cũng hiểu rõ vấn đề của họ, điều này khiến các IT BA phải có cả
+          sự am hiểu về công việc của khách hàng.<br /><br />• Làm việc với đội
+          ngũ IT:<br />Sau khi đã xác định được vấn đề cần giải quyết cũng như
+          các nhu cầu của khách hàng, người IT BA phải xây dựng các quy trình cụ
+          thể, tài liệu hóa các yêu cầu để bàn giao cho đội ngũ IT. Thông
+          thường, đội ngũ này sẽ bao gồm một hoặc nhiều nhóm phát triển dự án
+          như PM, Dev, QC,…. Bước này sẽ yêu cầu kiến thức IT từ BA, đảm bảo
+          truyền đạt một cách chính xác ngôn từ của khách hàng bằng các thuật
+          ngữ IT.<br /><br />Trong quá trình làm việc, người IT BA phải quản lý
+          tất cả các yêu cầu, vì sẽ luôn có sự thay đổi theo thời gian. Những
+          thay đổi này dù là nhỏ nhất vẫn cần sự can thiệp của IT BA đảm bảo
+          khách hàng và đội ngũ IT luôn có cùng sự hiểu biết dù cả hai dùng ngôn
+          ngữ, phương tiện khác nhau.<br /><br />Cuối cùng, thành quả của những
+          tháng ngày nỗ lực là một giải pháp cụ thể cho các vấn đề cần giải
+          quyết. Đó có thể là một phần mềm quản lý nhân sự do đội ngũ IT phát
+          triển để khắc phục tình trạng quá tải khi số lượng nhân viên tăng
+          nhanh. Lúc này, IT BA sẽ tiếp tục truyền đạt những gì mà đội IT đã làm
+          cho khách hàng, như viết tài liệu hướng dẫn sử dụng phần mềm.<br /><br /><b><i>IT Business Analyst sẽ đảm nhiệm nhiều vai trò trong dự
+          án</i></b><br /><br />Tóm lại, trong thời đại công nghệ như hiện nay, các công
+          ty phần mềm luôn hướng đến việc tạo ra các sản phẩm phục vụ nhu cầu
+          doanh nghiệp. Bản thân doanh nghiệp cũng cần có sự hỗ trợ đó để nâng
+          cao hiệu quả công việc, giải quyết các vấn đề còn tồn đọng bằng các
+          sản phẩm công nghệ hiện đại, tự động hóa. Và IT BA chính là người kết
+          nối cả hai lại với nhau bằng sự thấu hiểu vấn đề trong hoạt động của
+          doanh nghiệp và kiến thức trong lĩnh vực công nghệ.<br /><br /><b>3. Hành
+          trang để theo nghề IT Business Analyst<br /></b>Sự thật khá thú vị của
+          ngành nghề Business Analyst (BA) này chính là bạn không nhất thiết
+          phải là người trong ngành IT mới có thể đến với nghề BA được. Tuy
+          nhiên đối với IT BA thì công nghệ thông tin lại là một kỹ năng cơ bản
+          mà một IT BA nào cũng phải cần<br />
+          <br />BAC đã đưa ra những phân tích về các tố chất trở thành một BA
+          “xịn” cho cả những người trong và ngoài ngành IT, các tố chất này sẽ
+          được chia thành 3 hướng sau:<br />Những người trong lĩnh vực IT (Ví
+          dụ: Lập trình viên, chuyên viên kiểm tra phần mềm,….)<br />Những người
+          không chuyên IT (Ví dụ: Kinh doanh, marketing,…)<br />Người vừa có
+          kiến thức về IT, vừa có kiến thức cơ bản ở các lĩnh vực khác<br />Các
+          thông tin được mô tả trong hình ảnh dưới đây sẽ chỉ rõ những điều này,
+          hãy cùng BAC tham khảo nhé!<br />
+          <br /><br /><b>4. 3 nhóm người - 3 tố chất - cách để họ trở thành một BA
+          “xịn”</b><br />
+          <br />Bây giờ, khi đã hiểu được ý nghĩa và vai trò của một IT BA, hẳn
+          bạn đang tự hỏi học gì để làm IT Business Analyst. Có thể nói rằng
+          lượng kiến thức và kỹ năng cần thiết là rất lớn khi họ là những người
+          đóng vai trò kết nối cả hai bên. Ngoài ra, công việc BA hiện còn được
+          chia ra làm hai là “outsource” (BA làm trong một công ty dịch vụ) và
+          “client” (BA làm trong một công ty ở một lĩnh vực cụ thể).<br />
+          <br /><br />Một IT Business Analyst sẽ cần nhiều kiến thức và kỹ năng
+          khác nhau<br />Đối với người làm trong một lĩnh vực duy nhất, họ sẽ
+          tập trung vào việc trang bị kiến thức và kỹ năng chuyên sâu trong một
+          lĩnh vực cụ thể (domain knowledge). Trong khi đó, người BA làm trong
+          một công ty dịch vụ sẽ làm việc với nhiều khách hàng ở nhiều ngành
+          nghề khác nhau. Công việc này sẽ yêu cầu sự hiểu biết rộng trên nhiều
+          lĩnh vực, khả năng giao tiếp tốt với nhiều đối tượng khách hàng.<br /><img width="50%" src="https://drive.google.com/uc?export=download&id=1lA41XDrxYGqfILrOb6QxHLmVn_xenCl0"/>
+          <br />Mặc dù có
+          sự khác biệt nhưng vẫn có những kiến thức, kỹ năng cơ bản mà một IT BA
+          nào cũng cần.<br /><br />• Kiến thức công nghệ thông tin<br />Là người
+          trực tiếp làm việc với khách hàng nhưng cũng là người thực hiện các
+          phân tích, tài liệu hóa, mô hình hóa,…. Kiến thức trong lĩnh vực công
+          nghệ giúp BA truyền đạt chính xác nhất những nhu cầu của khách hàng
+          cho đội ngũ IT.<br /><br />• Kiến thức về tài chính, kế toán<br />Thực
+          hiện các thống kê, khảo sát và phân tích số liệu là một phần không thể
+          thiếu trong danh sách công việc của IT BA. Dù không phải là một viên
+          kế toán, hãy chắc chắn bạn hiểu các thông số cơ bản, cách sử dụng các
+          công cụ như Excel, SQL, Google Sheets,…. Ngày nay, bạn còn có thể dùng
+          các công cụ như Power BI, Tableau để trực quan dữ liệu thành những mô
+          hình sống động.<br /><br />• Kiến thức chuyên môn<br />Đây là kiến thức
+          ở các lĩnh vực khác như marketing, tài chính, kinh tế, ngân hàng,….
+          Hầu hết người có được sự am hiểu sâu rộng thường là các ứng viên hoạt
+          động trong một ngành nghề khác trước khi bắt đầu công việc BA. Tuy
+          nhiên, nếu bạn không nằm trong số này, hãy bắt đầu từ việc tìm hiểu,
+          đặc biệt nếu muốn trở thành IT BA Client, bạn có thể bắt đầu từ lĩnh
+          vực của client.<br /><br />• Kỹ năng giao tiếp<br />Đặc biệt quan trọng
+          đối với các IT BA outsource nói riêng và công việc BA nói chung. Để
+          hiểu rõ được vấn đề của khách hàng, các BA phải có một bộ kỹ năng giao
+          tiếp tốt như kỹ năng lắng nghe, cách đặt câu hỏi, tạo mối quan hệ,
+          ngôn ngữ cơ thể, đàm phán, thuyết phục…<br /><br />• Kỹ năng quản lý<br />Thông
+          thường, một người IT BA sẽ đảm nhiệm cùng lúc nhiều dự án, điều này sẽ
+          khiến người mới có chút bối rối. Kỹ năng quản lý sẽ là chìa khóa cho
+          cánh cửa này, từ việc quản lý dự án, quản lý nhân sự, thời gian cá
+          nhân,….<br /><br />• Kỹ năng làm việc nhóm<br />Tất cả các vấn đề không
+          bao giờ được tìm thấy trong một lần, vì thế, bạn sẽ phải trải qua
+          nhiều cuộc họp, thực hiện nhiều thay đổi, làm việc với nhiều nhóm từ
+          các bên liên quan đến đội ngũ IT. Hãy xây dựng cho mình khả năng làm
+          việc đội nhóm, kết hợp với nhiều đối tác, đồng nghiệp để đạt hiệu quả
+          tốt nhất.
+        </p>
+        <h3 class="primary-color">Danh sách các môn học bổ trợ</h3>
+        <table>
+          <tr>
+            <th>STT</th>
+            <th>Tên học phần</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Quản lý dự án</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Cơ sở dữ liệu</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Hệ thống thông tin quản lý</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Phân tích và thiết kế hệ thống</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Lập trình cơ bản</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Quản trị các nguồn lực thông tin</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Kỹ nghệ phần mềm</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Ứng dụng cơ sở dữ liệu</td>
+          </tr>
+        </table>
+        <h3 class="primary-color">Người trong nghề Chuyên viên phân tích nghiệp vụ nổi bật</h3>
+        <div class="flex space-evenly flex-wrap" style="width: 100%">
+          <div class="flex cross-center">
+            <img
+              class="user-avatar cover"
+              src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/337409480_768238091700391_2864170092989734296_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=4HryZheyIqUAX-YBeOf&_nc_ht=scontent.fhan2-3.fna&oh=00_AfAVwYwxBhqxMNovWsuFMHGq98CgDnMSz_CwRFt97Pfb8Q&oe=6552A13C"
+            />
+            <div class="user-info">
+              <h4 class="user-name">Vũ Thị Ngọc Minh</h4>
+              <h5 class="user-desc">Sinh viên khóa 62 ngành Hệ thống thông tin quản lý
+                <br/>Nguyên Phó bí thư LCĐ Viện CNTT và KTS, NEU</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!--FOOTER-->
+  <footer>
+    <div>
+      <p><b>ORIEN</b><br />DEFINE YOUR OWN WAY</p>
+    </div>
+    <div>
+      <p class="text-center" style="color: rgba(255, 255, 255, 0.5)">
+        Copyright by Pham Van Linh @ WD_2023<br />National Economics University
+      </p>
+    </div>
+    <div>
+      <p class="text-right">
+        <b>LIÊN HỆ</b><br />
+        f: facebook.com/pvlinh.neu<br />
+        p: 0787 097 309<br />
+        e: pvlinh.sitde@gmail.com<br />
+      </p>
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORIEN</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+
+    <link rel="stylesheet" type="text/css" href="./css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="./css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="./css/login_form.css" />
+
+    <link rel="stylesheet" type="text/css" href="./css/pages/home.css" />
+
+    <link rel="stylesheet" type="text/css" href="./css/font.css" />
+
+    <script src="./src/popup.js"></script>
+    <script src="./src/bootstrap.js"></script>
+  </head>
+
+  <body>
+    <!--NAV BAR-->
+    <nav class="flex space-between cross-center">
+      <img src="./assets/logo.svg" class="cursor-pointer" />
+
+      <div id="nav-items" class="flex space-evenly">
+        <a class="parent-hover cursor-pointer" href="/">
+          <p>TRANG CHỦ</p>
+          <div id="nav-items-underline"></div>
+        </a>
+        <a class="parent-hover cursor-pointer" href="./pages/careers/DA.html">
+          <p>NGÀNH NGHỀ</p>
+          <div id="nav-items-underline" class="display-on-parent-hover"></div>
+        </a>
+        <div class="parent-hover cursor-pointer">
+          <p>VIỆC LÀM</p>
+          <div id="nav-items-underline" class="display-on-parent-hover"></div>
+        </div>
+        <div class="parent-hover cursor-pointer">
+          <p>LIÊN HỆ</p>
+          <div id="nav-items-underline" class="display-on-parent-hover"></div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/user.svg"
+        class="cursor-pointer"
+        onclick="showPopup('login-form')"
+      />
+    </nav>
+
+    <!--LOGIN FORM-->
+    <div id="login-form-overlay" class="overlay no-margin no-padding">
+      <form
+        id="login-form"
+        class="column full-width text-center vertical-spacing-1 center"
+      >
+        <h3 class="center text-center no-margin">ĐĂNG NHẬP</h3>
+        <input
+          id="username"
+          placeholder="Tên đăng nhập"
+          required
+          class="input center"
+        />
+        <input
+          id="password"
+          placeholder="Mật khẩu"
+          type="password"
+          required
+          class="input"
+        />
+        <button id="login-button" type="submit" class="button cursor-pointer">
+          Đăng nhập
+        </button>
+        <p class="underline cursor-pointer no-margin" onclick="showRegister()">
+          Chưa có tài khoản? Đăng ký ngay.
+        </p>
+        <p class="underline cursor-pointer no-margin">Quên mật khẩu?</p>
+        <img
+          class="max-content opacity-10 cursor-pointer"
+          src="./assets/icons/exit.svg"
+          onclick="closePopup('login-form')"
+        />
+      </form>
+    </div>
+
+    <!--REGISTER FORM-->
+    <div id="register-form-overlay" class="overlay no-margin no-padding">
+      <form
+        id="register-form"
+        class="column full-width text-center vertical-spacing-1 center"
+      >
+        <h3 class="center text-center no-margin">ĐĂNG KÝ TÀI KHOẢN</h3>
+        <input
+          id="username"
+          placeholder="Tên đăng nhập"
+          required
+          class="input center"
+        />
+        <input id="email" placeholder="Email" required class="input center" />
+        <input
+          id="password"
+          placeholder="Mật khẩu"
+          required
+          class="input center"
+          type="password"
+        />
+        <input
+          id="repassword"
+          placeholder="Mật khẩu"
+          required
+          class="input center"
+          type="password"
+        />
+        <button
+          id="register-button"
+          type="submit"
+          class="button cursor-pointer"
+        >
+          ĐĂNG KÝ
+        </button>
+        <p class="underline cursor-pointer no-margin" onclick="showLogin()">
+          Quay về đăng nhập
+        </p>
+        <img
+          class="max-content opacity-10 cursor-pointer"
+          src="./assets/icons/exit.svg"
+          onclick="closePopup('register-form')"
+        />
+      </form>
+    </div>
+
+    <script>
+      function showRegister() {
+        closePopup('login-form');
+        showPopup('register-form');
+      }
+
+      function showLogin() {
+        closePopup('register-form');
+        showPopup('login-form');
+      }
+    </script>
+
+    <!--CONTENT-->
+    <div class="screen-center">
+      <div class="flex center cross-center column vertical-spacing-1">
+        <div>
+          <h1 id="title" class="glow text-center no-margin">ORIEN</h1>
+          <h2 id="subtitle" class="glow text-center no-margin">
+            DEFINE YOUR OWN WAY
+          </h2>
+          <div class="flex"></div>
+        </div>
+
+        <div id="title-description-box">
+          <h4 id="title-description" class="center cross-center text-center">
+            Trang web tích hợp cung cấp thông tin và việc làm về các ngành nghề
+            trực thuộc lĩnh vực Công nghệ thông tin dành cho sinh viên khối
+            ngành Công nghệ
+          </h4>
+        </div>
+
+        <div id="button-group" class="flex center cross-center">
+          <div
+            id="quiz-button"
+            class="border-radius-25 flex center cross-center cursor-pointer"
+          >
+            Trắc nghiệm hướng nghiệp
+          </div>
+          <div
+            id="career-button"
+            class="border-radius-25 flex center cross-center cursor-pointer"
+          >
+            Các ngành nghề
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+      <div>
+        <p><b>ORIEN</b><br />DEFINE YOUR OWN WAY</p>
+      </div>
+      <div>
+        <p class="text-center" style="color: rgba(255, 255, 255, 0.5)">
+          Copyright by Pham Van Linh @ WD_2023<br />National Economics
+          University
+        </p>
+      </div>
+      <div>
+        <p class="text-right">
+          <b>LIÊN HỆ</b><br />
+          f: facebook.com/pvlinh.neu<br />
+          p: 0787 097 309<br />
+          e: pvlinh.sitde@gmail.com<br />
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+#content-div {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 1rem 2rem 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: white;
+
+  font-family: 'Gilroy';
+}
+
+#content-div > img {
+  position: absolute;
+}
+
+#content {
+  height: 100%;
+}
+
+#content > * {
+  margin: 0;
+}
+
+#content > h1 {
+  font-family: 'LCK';
+  font-size: 3.25rem;
+}
+
+#content > h2 {
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+#content > p {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  text-align: justify;
+  font-size: 1.25rem;
+}
+
+#content > h3 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+th,
+td {
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  font-size: 1.25rem;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+}
+
+.user-info {
+  padding-left: 1rem;
+}
+
+.user-info > * {
+  margin: 0;
+}
+
+.user-info > h4 {
+  font-size: 1.5rem;
+}
+
+.user-info > h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+ul,
+li {
+  font-size: 1.25rem;
+}
+
+#text-content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.25rem;
+}

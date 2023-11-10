@@ -1,0 +1,71 @@
+#main-content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#careers-sidebar {
+  width: 25%;
+  background-color: white;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+#sidebar-item {
+  text-decoration: none;
+  display: flex;
+}
+
+#sidebar-item > p {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: 'Gilroy';
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+#sidebar-item > div {
+  width: 1rem;
+  height: auto;
+  overflow: auto;
+}
+
+#careers-content {
+  margin-left: 1rem;
+  padding: 2rem;
+  background-color: white;
+  margin-right: 1rem;
+  border-radius: 1rem;
+}
+
+#careers-content > * {
+  margin: 0;
+}
+
+#careers-content > p {
+  width: 50%;
+  font-size: 1.25rem;
+  text-align: justify;
+}
+
+#careers-content > button {
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: white;
+}
+
+#content-div {
+  display: flex;
+  position: relative;
+  justify-content: end;
+}
+
+#humanImage {
+  display: inline-block;
+  position: absolute;
+  align-self: flex-end;
+  z-index: 1;
+  left: auto;
+  width: 50%;
+  height: 80%;
+}

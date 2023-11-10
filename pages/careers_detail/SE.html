@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Analyst - ORIEN</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/login_form.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/font.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../css/pages/careers_detail.css"
+    />
+
+    <script src="../../src/popup.js"></script>
+
+    <script src="../../src/bootstrap.js"></script>
+
+    <style>
+      body {
+        background-color: #242424;
+      }
+
+      .primary-color {
+        color: #ac2222;
+      }
+    </style>
+  </head>
+  <body>
+    <!--NAV BAR-->
+    <nav class="flex space-between cross-center">
+      <img src="../../assets/logo.svg" class="cursor-pointer" />
+
+      <div id="nav-items" class="flex space-evenly">
+        <a class="parent-hover cursor-pointer" href="/">
+          <p>TRANG CHỦ</p>
+          <div id="nav-items-underline"></div>
+        </a>
+        <a
+          class="parent-hover cursor-pointer"
+          href="../../pages/careers/DA.html"
+        >
+          <p>NGÀNH NGHỀ</p>
+          <div id="nav-items-underline" class="display-on-parent-hover"></div>
+        </a>
+        <div class="parent-hover cursor-pointer">
+          <p>VIỆC LÀM</p>
+          <div id="nav-items-underline" class="display-on-parent-hover"></div>
+        </div>
+        <div class="parent-hover cursor-pointer">
+          <p>LIÊN HỆ</p>
+          <div id="nav-items-underline" class="display-on-parent-hover"></div>
+        </div>
+      </div>
+
+      <img
+        src="../../assets/user.svg"
+        class="cursor-pointer"
+        onclick="showPopup('login-form')"
+      />
+    </nav>
+
+    <!--LOGIN FORM-->
+    <div id="login-form-overlay" class="overlay no-margin no-padding">
+      <form
+        id="login-form"
+        class="column full-width text-center vertical-spacing-1 center"
+      >
+        <h3 class="center text-center no-margin">ĐĂNG NHẬP</h3>
+        <input
+          id="username"
+          placeholder="Tên đăng nhập"
+          required
+          class="input center"
+        />
+        <input
+          id="password"
+          placeholder="Mật khẩu"
+          type="password"
+          required
+          class="input"
+        />
+        <button id="login-button" type="submit" class="button cursor-pointer">
+          Đăng nhập
+        </button>
+        <p class="underline cursor-pointer no-margin" onclick="showRegister()">
+          Chưa có tài khoản? Đăng ký ngay.
+        </p>
+        <p class="underline cursor-pointer no-margin">Quên mật khẩu?</p>
+        <img
+          class="max-content opacity-10 cursor-pointer"
+          src="./assets/icons/exit.svg"
+          onclick="closePopup('login-form')"
+        />
+      </form>
+    </div>
+
+    <!--REGISTER FORM-->
+    <div id="register-form-overlay" class="overlay no-margin no-padding">
+      <form
+        id="register-form"
+        class="column full-width text-center vertical-spacing-1 center"
+      >
+        <h3 class="center text-center no-margin">ĐĂNG KÝ TÀI KHOẢN</h3>
+        <input
+          id="username"
+          placeholder="Tên đăng nhập"
+          required
+          class="input center"
+        />
+        <input id="email" placeholder="Email" required class="input center" />
+        <input
+          id="password"
+          placeholder="Mật khẩu"
+          required
+          class="input center"
+          type="password"
+        />
+        <input
+          id="repassword"
+          placeholder="Mật khẩu"
+          required
+          class="input center"
+          type="password"
+        />
+        <button
+          id="register-button"
+          type="submit"
+          class="button cursor-pointer"
+        >
+          ĐĂNG KÝ
+        </button>
+        <p class="underline cursor-pointer no-margin" onclick="showLogin()">
+          Quay về đăng nhập
+        </p>
+        <img
+          class="max-content opacity-10 cursor-pointer"
+          src="./assets/icons/exit.svg"
+          onclick="closePopup('register-form')"
+        />
+      </form>
+    </div>
+
+    <script>
+      function showRegister() {
+        closePopup('login-form');
+        showPopup('register-form');
+      }
+
+      function showLogin() {
+        closePopup('register-form');
+        showPopup('login-form');
+      }
+    </script>
+
+    <div id="content-div">
+      <a id="back_button" class="cursor-pointer" href="/pages/careers/DA.html">
+        <img src="../../assets/icons/arrow-left-circle.png" />
+      </a>
+
+      <div id="content" class="column">
+        <h1 class="primary-color">SOFTWARE ENGINEER</h1>
+        <h2 class="primary-color">KỸ SƯ PHẦN MỀM</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/2HRFcdwwU5s"
+          title="Những điều làm mình vui khi làm software engineer"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <div id="text-content">
+          <h2>Mô tả công việc:</h2>
+          <p>
+            Nghề Software Engineer là một ngành nghề trong lĩnh vực công nghiệp
+            công nghệ thông tin. Công việc chính của một Software Engineer bao
+            gồm phát triển, kiểm thử và duy trì phần mềm. Họ thường tham gia vào
+            việc thiết kế và triển khai các hệ thống phần mềm, nghiên cứu và áp
+            dụng công nghệ mới để cải thiện hiệu suất phần mềm, và hợp tác chặt
+            chẽ với nhóm phát triển và các bên liên quan khác để đáp ứng yêu cầu
+            của dự án.
+          </p>
+
+          <h2>Kỹ năng cần thiết:</h2>
+          <ul>
+            <li>
+              Lập trình: Có khả năng lập trình thành thạo trong ít nhất một ngôn
+              ngữ như Java, C++, Python, hoặc JavaScript.
+            </li>
+            <li>Hiểu biết sâu rộng về cấu trúc dữ liệu và thuật toán.</li>
+            <li>Kiến thức vững về hệ điều hành và môi trường phát triển.</li>
+            <li>Kỹ năng làm việc nhóm và giao tiếp hiệu quả.</li>
+          </ul>
+
+          <h2>Bằng cấp và Trình độ:</h2>
+          <p>
+            Đa số Software Engineers có bằng cử nhân hoặc thậm chí là thạc sĩ
+            trong lĩnh vực Công nghệ thông tin, Kỹ thuật máy tính hoặc các ngành
+            liên quan.
+          </p>
+
+          <h2>Công cụ và Công nghệ:</h2>
+          <p>
+            Software Engineers sử dụng nhiều công cụ phần mềm và môi trường phát
+            triển như IDEs (Integrated Development Environments), source control
+            (Git), và các công cụ kiểm thử tự động. Họ cũng cần hiểu biết về các
+            framework và thư viện phổ biến.
+          </p>
+
+          <h2>Trends và Công nghệ mới:</h2>
+          <p>
+            Nghề này liên tục chịu ảnh hưởng của các xu hướng công nghệ mới như
+            trí tuệ nhân tạo, học máy, điện toán đám mây, và blockchain.
+            Software Engineers phải duy trì kiến thức liên tục để nắm bắt các
+            công nghệ mới và xu hướng ngành.
+          </p>
+
+          <h2>Việc làm và Thị trường lao động:</h2>
+          <p>
+            Có nhiều cơ hội việc làm cho Software Engineers, đặc biệt là tại các
+            công ty công nghệ lớn, doanh nghiệp phần mềm và các start-up. Thị
+            trường lao động thường xuyên cần người có kỹ năng chuyên sâu và sự
+            sáng tạo trong phát triển phần mềm.
+          </p>
+
+          <h2>Lợi ích và Thách thức:</h2>
+          <p>
+            Lợi ích của nghề bao gồm mức lương cao, cơ hội nghề nghiệp, và khả
+            năng làm việc linh hoạt. Tuy nhiên, Software Engineers cũng phải đối
+            mặt với thách thức như áp lực thời gian, nhu cầu liên tục học hỏi,
+            và công việc đòi hỏi sự tập trung cao.
+          </p>
+        </div>
+
+        <h3 class="primary-color">Danh sách các môn học bổ trợ</h3>
+        <table>
+          <tr>
+            <th>STT</th>
+            <th>Tên học phần</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Lập trình hướng đối tượng</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Cơ sở dữ liệu</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Phát triển ứng dụng</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Cấu trúc dữ liệu và giải thuật</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Lập trình mobile</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Cơ sở lập trình</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Kỹ nghệ phần mềm</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Các công nghệ hiện đại trong CNTT</td>
+          </tr>
+        </table>
+        <h3 class="primary-color">
+          Người trong nghề Chuyên viên phân tích dữ liệu nổi bật
+        </h3>
+        <div class="flex space-evenly flex-wrap" style="width: 100%">
+          <div class="flex cross-center">
+            <img
+              class="user-avatar cover"
+              src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/311112601_3397647817136846_8192480526979887631_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=CdfbVFHNHykAX-gkh5Y&_nc_ht=scontent.fhan2-4.fna&oh=00_AfBvGW2FQn4gv91abrJ6HoxvIe90hlAc0eqNQg5ms6HqGw&oe=6552EDD2"
+            />
+            <div class="user-info">
+              <h4 class="user-name">James Gosling</h4>
+              <h5 class="user-desc">Nhà sáng tạo ngôn ngữ lập trình Java</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!--FOOTER-->
+  <footer>
+    <div>
+      <p><b>ORIEN</b><br />DEFINE YOUR OWN WAY</p>
+    </div>
+    <div>
+      <p class="text-center" style="color: rgba(255, 255, 255, 0.5)">
+        Copyright by Pham Van Linh @ WD_2023<br />National Economics University
+      </p>
+    </div>
+    <div>
+      <p class="text-right">
+        <b>LIÊN HỆ</b><br />
+        f: facebook.com/pvlinh.neu<br />
+        p: 0787 097 309<br />
+        e: pvlinh.sitde@gmail.com<br />
+      </p>
+    </div>
+  </footer>
+</html>

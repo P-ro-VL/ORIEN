@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORIEN</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/login_form.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/font.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/pages/careers.css" />
+
+    <script src="../../src/popup.js"></script>
+
+    <script src="../../src/careers.js"></script>
+
+    <script src="../../src/bootstrap.js"></script>
+
+    <style>
+      body {
+        background-color: #242424;
+        min-height: 100%;
+        min-width: 100%;
+        font-family: 'Gilroy';
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <!--NAV BAR-->
+    <nav class="flex space-between cross-center">
+      <img src="../../assets/logo.svg" class="cursor-pointer" />
+
+      <div id="nav-items" class="flex space-evenly">
+        <div class="parent-hover cursor-pointer">
+          <p>TRANG CHỦ</p>
+          <div id="nav-items-underline" class="display-on-parent-hover"></div>
+        </div>
+        <div class="parent-hover cursor-pointer">
+          <p>NGÀNH NGHỀ</p>
+          <div id="nav-items-underline"></div>
+        </div>
+        <div class="parent-hover cursor-pointer">
+          <p>VIỆC LÀM</p>
+          <div id="nav-items-underline" class="display-on-parent-hover"></div>
+        </div>
+        <div class="parent-hover cursor-pointer">
+          <p>LIÊN HỆ</p>
+          <div id="nav-items-underline" class="display-on-parent-hover"></div>
+        </div>
+      </div>
+
+      <img
+        src="../../assets/user.svg"
+        class="cursor-pointer"
+        onclick="showPopup('login-form')"
+      />
+    </nav>
+
+    <!--LOGIN FORM-->
+    <div id="login-form-overlay" class="overlay no-margin no-padding">
+      <div
+        id="login-form"
+        class="column full-width text-center vertical-spacing-1 center"
+      >
+        <h3 class="center text-center no-margin">ĐĂNG NHẬP</h3>
+        <input
+          id="username"
+          placeholder="Tên đăng nhập"
+          required
+          class="input center"
+        />
+        <input
+          id="password"
+          placeholder="Mật khẩu"
+          type="password"
+          required
+          class="input"
+        />
+        <button id="login-button" type="submit" class="button cursor-pointer">
+          Đăng nhập
+        </button>
+        <p class="underline cursor-pointer no-margin">Quên mật khẩu?</p>
+        <img
+          class="max-content opacity-10 cursor-pointer"
+          src="../../assets/icons/exit.svg"
+          onclick="closePopup('login-form')"
+        />
+      </div>
+    </div>
+
+    <input id="id-data" type="hidden" value="UID" />
+    <div id="main-content" class="flex full-width">
+      <div id="careers-sidebar"></div>
+      <div id="content-div">
+        <div id="careers-content"></div>
+        <img
+          id="humanImage"
+          class="contain"
+          src="../../assets/images/human_7.png"
+        />
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <p><b>ORIEN</b><br />DEFINE YOUR OWN WAY</p>
+      </div>
+      <div>
+        <p class="text-center" style="color: rgba(255, 255, 255, 0.5)">
+          Copyright by Pham Van Linh @ WD_2023<br />National Economics
+          University
+        </p>
+      </div>
+      <div>
+        <p class="text-right">
+          <b>LIÊN HỆ</b><br />
+          f: facebook.com/pvlinh.neu<br />
+          p: 0787 097 309<br />
+          e: pvlinh.sitde@gmail.com<br />
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

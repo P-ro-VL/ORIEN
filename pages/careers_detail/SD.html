@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Software Developer - ORIEN</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/login_form.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/font.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../css/pages/careers_detail.css"
+    />
+
+    <script src="../../src/popup.js"></script>
+
+    <script src="../../src/bootstrap.js"></script>
+
+    <style>
+      body {
+        background-color: #242424;
+      }
+
+      .primary-color {
+        color: #51992f;
+      }
+    </style>
+  </head>
+  <body>
+    <!--NAV BAR-->
+    <nav class="flex space-between cross-center">
+      <img src="../../assets/logo.svg" class="cursor-pointer" />
+
+      <div id="nav-items" class="flex space-evenly">
+        <a class="parent-hover cursor-pointer" href="/">
+          <p>TRANG CHỦ</p>
+          <div id="nav-items-underline"></div>
+        </a>
+        <a
+          class="parent-hover cursor-pointer"
+          href="../../pages/careers/DA.html"
+        >
+          <p>NGÀNH NGHỀ</p>
+          <div id="nav-items-underline" class="display-on-parent-hover"></div>
+        </a>
+        <div class="parent-hover cursor-pointer">
+          <p>VIỆC LÀM</p>
+          <div id="nav-items-underline" class="display-on-parent-hover"></div>
+        </div>
+        <div class="parent-hover cursor-pointer">
+          <p>LIÊN HỆ</p>
+          <div id="nav-items-underline" class="display-on-parent-hover"></div>
+        </div>
+      </div>
+
+      <img
+        src="../../assets/user.svg"
+        class="cursor-pointer"
+        onclick="showPopup('login-form')"
+      />
+    </nav>
+
+    <!--LOGIN FORM-->
+    <div id="login-form-overlay" class="overlay no-margin no-padding">
+      <form
+        id="login-form"
+        class="column full-width text-center vertical-spacing-1 center"
+      >
+        <h3 class="center text-center no-margin">ĐĂNG NHẬP</h3>
+        <input
+          id="username"
+          placeholder="Tên đăng nhập"
+          required
+          class="input center"
+        />
+        <input
+          id="password"
+          placeholder="Mật khẩu"
+          type="password"
+          required
+          class="input"
+        />
+        <button id="login-button" type="submit" class="button cursor-pointer">
+          Đăng nhập
+        </button>
+        <p class="underline cursor-pointer no-margin" onclick="showRegister()">
+          Chưa có tài khoản? Đăng ký ngay.
+        </p>
+        <p class="underline cursor-pointer no-margin">Quên mật khẩu?</p>
+        <img
+          class="max-content opacity-10 cursor-pointer"
+          src="./assets/icons/exit.svg"
+          onclick="closePopup('login-form')"
+        />
+      </form>
+    </div>
+
+    <!--REGISTER FORM-->
+    <div id="register-form-overlay" class="overlay no-margin no-padding">
+      <form
+        id="register-form"
+        class="column full-width text-center vertical-spacing-1 center"
+      >
+        <h3 class="center text-center no-margin">ĐĂNG KÝ TÀI KHOẢN</h3>
+        <input
+          id="username"
+          placeholder="Tên đăng nhập"
+          required
+          class="input center"
+        />
+        <input id="email" placeholder="Email" required class="input center" />
+        <input
+          id="password"
+          placeholder="Mật khẩu"
+          required
+          class="input center"
+          type="password"
+        />
+        <input
+          id="repassword"
+          placeholder="Mật khẩu"
+          required
+          class="input center"
+          type="password"
+        />
+        <button
+          id="register-button"
+          type="submit"
+          class="button cursor-pointer"
+        >
+          ĐĂNG KÝ
+        </button>
+        <p class="underline cursor-pointer no-margin" onclick="showLogin()">
+          Quay về đăng nhập
+        </p>
+        <img
+          class="max-content opacity-10 cursor-pointer"
+          src="./assets/icons/exit.svg"
+          onclick="closePopup('register-form')"
+        />
+      </form>
+    </div>
+
+    <script>
+      function showRegister() {
+        closePopup('login-form');
+        showPopup('register-form');
+      }
+
+      function showLogin() {
+        closePopup('register-form');
+        showPopup('login-form');
+      }
+    </script>
+
+    <div id="content-div">
+      <a id="back_button" class="cursor-pointer" href="/pages/careers/SD.html">
+        <img src="../../assets/icons/arrow-left-circle.png" />
+      </a>
+
+      <div id="content" class="column">
+        <h1 class="primary-color">SOFTWARE DEVELOPER</h1>
+        <h2 class="primary-color">NHÀ PHÁT TRIỂN PHẦN MỀM</h2>
+        <<iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/iiVN99pAg_8"
+          title="Software Engineer vs Software Developer"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <p class="column center">
+          Software Developer là gì? Software Developer còn được gọi là Nhà phát
+          triển phần mềm. Đây là những người sử dụng ngôn ngữ lập trình để thiết
+          kế và xây dựng chương trình máy tính. Những ứng dụng thường ngày mà
+          bạn sử dụng trên các thiết bị công nghệ, điện tử đều được tạo ra bởi
+          Software Developer. <br /><br />Bên cạnh đó, họ dựa vào các kỹ thuật
+          khoa học, toán học và công nghệ để kiểm tra cũng như đánh giá phần mềm
+          của chính mình hoặc người khác. Thông thường, mỗi nhà phát triển phần
+          mềm sẽ chuyên về ít nhất một ngôn ngữ lập trình riêng vì họ là nhân tố
+          chính trong quá trình sản xuất ra các ứng dụng.<br /><br /><b
+            >Cơ hội việc làm Software Developer</b
+          ><br />Có thể thấy, việc sử dụng phần mềm và các ứng dụng hiện đại
+          ngày càng phổ biến đã giúp cuộc sống của con người trở nên thuận lợi
+          hơn. Chính vì vậy, dự đoán trong những năm tới, nhu cầu tuyển dụng các
+          Software Developer vẫn sẽ rất lớn và trở thành một trong những công
+          việc cần nguồn lực dồi dào. <br /><br />Tuy vậy, đây cũng là một ngành
+          nghề đang rất cạnh tranh. Để đáp ứng nhu cầu công việc đòi hỏi người
+          kỹ sư phần mềm phải trau dồi thêm ngôn ngữ lập trình và nhiều kỹ năng
+          khác nhau để đáp ứng sự đòi hỏi ngày càng cao của khách hàng. Ngược
+          lại, nếu không chịu khó tìm tòi học hỏi, bạn sẽ rất dễ tụt hậu và bị
+          bỏ lại phía sau, từ đó dễ dàng bị đào thải khỏi ngành.<br /><br /><b
+            >Mô tả công việc của Software Developer</b
+          ><br />Đọc tới đây, có lẽ bạn đã hiểu được phần nào về Software
+          Developer. Vậy nhưng cụ thể họ làm những công việc gì? Là một Software
+          Developer, đây là những công việc mà bạn cần phải hoàn thành:<br />Đầu
+          tiên, Software Developer sẽ là người gặp gỡ khách hàng và phân tích
+          nhu cầu của khách hàng: Họ muốn gì? Họ cần điều gì? Họ thích sử dụng
+          sản phẩm như thế nào?. Từ đó, Software Developer có thể biết được mình
+          cần phát triển ra phần mềm với những tính năng nào để đáp ứng đúng nhu
+          cầu của khách hàng.<br />Sau khi đã thu thập được thông tin, Software
+          Developer sẽ tổng hợp lại các tính năng. Bước tiếp theo là thiết kế
+          các mảng phần mềm khác nhau và cho chúng cùng hoạt động để hình dung
+          ra được phần mềm sẽ hoạt động ra sao.<br />Ngoài ra, Software
+          Developer cũng cần là người trực tiếp làm việc với các bộ phận khác.
+          Bởi khi đã hoàn thành được thiết kế ban đầu, Software Developer cần
+          chuyển qua cho các lập trình viên và coder để họ phát triển sản phẩm
+          một cách đầy đủ hơn. Khi cần đến ý kiến từ Software Developer, họ vẫn
+          cần có mặt để truyền đạt được đầy đủ thông tin về sản phẩm cũng như
+          nhu cầu của khách hàng mà Software Developer muốn sản phẩm đáp ứng
+          được. <br />Cuối cùng, sản phẩm đã được hoàn thành, Software Developer
+          vẫn cần theo dõi để cập nhật hoặc cải tiến các tính năng sản phẩm sao
+          cho khi áp dụng sản phẩm vào thực tiễn đạt được hiệu quả tốt nhất.<br /><b
+            >Mức thu nhập của Software Developer</b
+          ><br />Software Developer hiện là một trong những ngành có sức hút khá
+          lớn. Do đó, mức lương của Software Developer cũng khá hẫu hĩnh, nhưng
+          sẽ khác nhau tuỳ thuộc vào kinh nghiệm của bạn: <br /><br />Đối với
+          thực tập sinh mới ra trường, chưa có nhiều kinh nghiệm mức lương được
+          trả từ khoảng 5.000.000 – 7.000.0000 VNĐ <br />Đối với người mới, đã
+          có 1 – 3 năm kinh nghiệm mức lương được trả từ khoảng 10.000.000 –
+          12.000.000 VNĐ <br />Đối với người đã tích luỹ được nhiều kỹ năng,
+          kinh nghiệm dày dặn trên 3 năm mức lương được trả từ khoảng 20.000.000
+          – 25.000.000 VNĐ<br /><br /><b>Học gì ra để làm Software Developer?</b
+          ><br />Để trở thành một Software Developer bạn cần học các kiến thức
+          chuyên môn về lập trình, về phần mềm. Muốn trở thành một Software
+          Developer thì bạn có thể theo học những ngành sau đây:<br /><br />-
+          Khoa học máy tính: là ngành tập trung chủ yếu vào toán học và logic
+          giúp bạn dễ dàng tiếp cận với các thuật ngữ về trí tuệ nhân tạo hoặc
+          học máy Machine Learning.<br />- Ngành công nghệ phần mềm: là ngành
+          học sẽ cung cấp cho bạn những nền tảng kiến thức cơ bản để theo đuổi
+          nghề lập trình viên.<br />- Ngành kỹ thuật máy tính: là ngành cung cấp
+          cho bạn những kiến thức về phần cứng lẫn phần mềm máy tính để có thể
+          thiết kế, xây dựng hệ thống phù hợp.<br />- Hệ thống thông tin: là
+          ngành học giúp bạn có thể dễ dàng thu thập, xử lý thông tin cùng các
+          kỹ năng phân tích, đánh giá và vận hành quản trị thông tin để tạo ra
+          các kết quả giá trị.<br />- Truyền thông và mạng máy tính: là ngành
+          học cung cấp những kiến thức về quản trị hệ thống mạng. Nếu bạn muốn
+          theo đuổi nghề lập trình viên thì có thể trở thành người thiết kế,
+          phát triển phần mềm mạng sau khi tốt nghiệp chuyên ngành này.<br /><br />Ngành
+          Công nghệ thông tin đã và đang được mở rộng quy mô đào tạo tại các
+          trường đại học, cao đẳng trên toàn quốc. Việc học tập trên trường sẽ
+          giúp bạn có nền tảng cơ bản và cần thiết để trở thành một Software
+          Developer. Một số trường Đại học, Cao đẳng đào tạo ngành CNTT uy tín
+          như: Đại học Công Nghệ – Đại học Quốc Gia Hà Nội, Đại học FPT Học viện
+          Bưu Chính Viễn Thông cơ sở phía Bắc, Đại học Bách Khoa TP Hồ Chí Minh,
+          Đại học Khoa học Tự Nhiên – Đại học Quốc Gia TP Hồ Chí Minh, Học viện
+          Bưu Chính Viễn Thông cơ sở phía Nam, Đại học Bách Khoa Đà Nẵng,…<br /><br /><b
+            >5 tố chất cần có của Software Developer</b
+          ><br />Để trở thành Software Developer, dưới đây là một số kiến thức,
+          kỹ năng cần có ở bạn.<br /><br /><b><i>Trình độ học vấn và kiến thức chuyên
+          môn </i></b><br /><br />Các nhà phát triển phần mềm thường được yêu cầu có
+          bằng cử nhân về khoa học máy tính hoặc công nghệ thông tin và có kiến
+          thức về ngôn ngữ mã hóa (ví dụ: C ++, Java, JavaScript) và các khung
+          cấu trúc cho các ứng dụng web động (ví dụ: AngularJS, Git). Ngoài ra,
+          Software Developer còn phải có tư duy về thiết kế và kiến trúc phần
+          mềm, kỹ năng tìm kiếm và sửa lỗi (debugging) trong phần mềm. Điều này
+          sẽ đảm bảo phần mềm chạy đúng kỹ thuật và hạn chế tối đa việc gặp lỗi
+          <br /><br /><i><b>Kỹ năng mềm</i></b><br /><br />Để trở thành một Software
+          Developer xuất sắc, ngoài kiến thức chuyên môn, bạn cần phải trang bị
+          thêm khả năng ngoại ngữ, kỹ năng giao tiếp, làm việc nhóm,…
+          <br /><br /><i><b>Khả năng ngoại ngữ</i></b><br /><br />Là nhân lực ngành công nghệ
+          thông tin, bạn không cần thông thạo tiếng Anh như biên phiên dịch,
+          nhưng bạn cần có vốn tiếng Anh chuyên ngành tốt để đọc và nghiên cứu
+          tài liệu. Chỉ như thế, bạn mới nắm bắt được những kiến thức mới của
+          ngành. <br /><br /><i><b>Kỹ năng giao tiếp và làm việc nhóm</i></b><br /><br />Là
+          một nhà phát triển phần mềm, bạn sẽ không làm việc một mình. Thay vào
+          đó, bạn cần hợp tác với nhiều người khác. Chính vì vậy, bạn cần có khả
+          năng giao tiếp tốt để truyền đạt thông tin, ý tưởng một cách ngắn gọn
+          và rõ ràng cho những người khác. Đồng thời, bạn cần phải biết cách làm
+          việc và phối hợp hiệu quả với những đồng nghiệp xung quanh. Có như vậy
+          bạn mới hoàn thành chương trình, dự án một cách tốt nhất.
+          <br /><br /><i><b>Khả năng giải quyết vấn đề</i></b><br /><br />Một trong những
+          nhiệm vụ chính của nhà phát triển phần mềm là phát hiện và xử lý các
+          lỗi phát sinh trong phần mềm hiện có. Do đó, bạn không thể không có kỹ
+          năng giải quyết vấn đề.<br />
+        </p>
+
+        <h3 class="primary-color">Danh sách các môn học bổ trợ</h3>
+        <table>
+          <tr>
+            <th>STT</th>
+            <th>Tên học phần</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Lập trình hướng đối tượng</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Cơ sở dữ liệu</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Phát triển ứng dụng</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Cấu trúc dữ liệu và giải thuật</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Lập trình mobile</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Cơ sở lập trình</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Kỹ nghệ phần mềm</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Các công nghệ hiện đại trong CNTT</td>
+          </tr>
+        </table>
+        <h3 class="primary-color">
+          Người trong nghề Nhà phát triển phần mềm nổi bật
+        </h3>
+        <div class="flex space-evenly flex-wrap" style="width: 100%">
+          <div class="flex cross-center">
+            <img
+              class="user-avatar cover"
+              src="https://cdn.tgdd.vn/Files/2022/02/20/1416484/mark-zuckerberg-daubai_1280x720-800-resize.jpg"
+              />
+            <div class="user-info">
+              <h4 class="user-name">Mark Zerkerburg</h4>
+              <h5 class="user-desc">Tổng giám đốc điều hành Meta</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!--FOOTER-->
+  <footer>
+    <div>
+      <p><b>ORIEN</b><br />DEFINE YOUR OWN WAY</p>
+    </div>
+    <div>
+      <p class="text-center" style="color: rgba(255, 255, 255, 0.5)">
+        Copyright by Pham Van Linh @ WD_2023<br />National Economics University
+      </p>
+    </div>
+    <div>
+      <p class="text-right">
+        <b>LIÊN HỆ</b><br />
+        f: facebook.com/pvlinh.neu<br />
+        p: 0787 097 309<br />
+        e: pvlinh.sitde@gmail.com<br />
+      </p>
+    </div>
+  </footer>
+</html>

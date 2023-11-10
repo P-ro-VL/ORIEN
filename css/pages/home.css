@@ -1,0 +1,63 @@
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+body {
+  background-image: url('../assets/bgr.png');
+  background-size: cover;
+  min-height: 100%;
+  min-width: 100%;
+  font-family: 'Gilroy';
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#title {
+  font-family: 'LCK';
+  font-size: 6rem;
+}
+
+#subtitle {
+  font-family: 'LCK';
+  font-size: 3rem;
+}
+
+#title-description-box {
+  width: 50%;
+  border-radius: 1.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+#title-description {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+#quiz-button {
+  width: 18rem;
+  height: 3.75rem;
+  background-color: #c2a94f;
+
+  color: white;
+  font-size: 1.25rem;
+}
+
+#career-button {
+  width: 18rem;
+  height: 3.75rem;
+  background-color: #fff;
+
+  color: #c2a94f;
+  font-size: 1.25rem;
+}
+
+#button-group {
+  gap: 1.8rem;
+}

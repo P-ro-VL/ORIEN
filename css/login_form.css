@@ -1,0 +1,69 @@
+#login-form {
+  display: none;
+  position: absolute;
+
+  left: 35%;
+  top: 22.5%;
+
+  width: 30%;
+  height: 55%;
+
+  background-color: white;
+  border-radius: 10px;
+
+  padding: 2%;
+}
+
+#login-form > h3 {
+  font-family: 'Gilroy';
+  font-size: 2rem;
+  font-weight: 700;
+  color: #c2a94f;
+}
+
+#login-form > input {
+  height: 3rem;
+}
+
+#login-button {
+  width: 50%;
+  background: #c2a94f;
+  color: white;
+}
+
+/*
+Register form
+*/
+
+#register-form {
+  display: none;
+  position: absolute;
+
+  left: 35%;
+  top: 22.5%;
+
+  width: 30%;
+  height: 55%;
+
+  background-color: white;
+  border-radius: 10px;
+
+  padding: 2%;
+}
+
+#register-form > h3 {
+  font-family: 'Gilroy';
+  font-size: 2rem;
+  font-weight: 700;
+  color: #c2a94f;
+}
+
+#register-form > input {
+  height: 3rem;
+}
+
+#register-button {
+  width: 50%;
+  background: #c2a94f;
+  color: white;
+}

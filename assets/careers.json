@@ -1,0 +1,65 @@
+[
+  {
+    "id": "DA",
+    "name": {
+      "en": "Data Analyst",
+      "vi": "Chuyên viên phân tích dữ liệu"
+    },
+    "description": "Data Analyst là những chuyên gia dữ liệu, chịu trách nhiệm thu thập và phân tích thông tin số để hỗ trợ quyết định kinh doanh. Sử dụng các công cụ thống kê và khoa học dữ liệu, họ tìm ra xu hướng và đưa ra dự đoán. Với sự gia tăng về dữ liệu số, vai trò của Data Analyst trở nên ngày càng quan trọng, giúp doanh nghiệp hiểu rõ hơn về thị trường và tối ưu hóa quy trình làm việc. Đây là ngành nghề thu hút những người đam mê số liệu và muốn góp phần vào sự thành công của doanh nghiệp.",
+    "color": "#352973"
+  },
+  {
+    "id": "SE",
+    "name": {
+      "en": "Software Engineer",
+      "vi": "Kỹ sư phần mềm"
+    },
+    "description": "Software Engineering, hay kỹ sư phần mềm, là những nhà phát triển tài năng đóng góp vào sự hiện đại hóa của thế giới kỹ thuật. Chúng tạo ra các ứng dụng, hệ thống và phần mềm mạnh mẽ, từ ứng dụng di động cho đến hệ thống lớn, đảm bảo chúng hoạt động mượt mà và an toàn. Sự sáng tạo của họ thường đi kèm với khả năng giải quyết vấn đề, tư duy logic và kiến thức sâu rộng về lập trình. Software Engineers không chỉ tạo ra mã nguồn, mà còn tham gia vào quy trình phát triển từ đầu đến cuối. Họ tìm kiếm cách tối ưu hóa hiệu suất, đảm bảo tính bảo mật, và thường xuyên cập nhật với những xu hướng công nghệ mới. Điều này đảm bảo rằng sản phẩm của họ không chỉ đáp ứng nhu cầu người sử dụng hiện tại mà còn có khả năng mở rộng cho tương lai, đóng góp vào sự tiến bộ toàn cầu của ngành công nghiệp công nghệ.",
+    "color": "#AC2222"
+  },
+  {
+    "id": "SD",
+    "name": {
+      "en": "Software Developer",
+      "vi": "Nhà phát triển phần mềm"
+    },
+    "description": "Software Developers là những kiến trúc sư của thế giới kỹ thuật số, sáng tạo ra các ứng dụng và hệ thống mà chúng ta sử dụng hàng ngày. Sử dụng nền tảng kiến thức vững về lập trình, họ chuyển ý tưởng thành mã nguồn, xây dựng các ứng dụng di động, phần mềm máy tính và hệ thống phức tạp. Qua quá trình phát triển, Software Developers không chỉ tạo ra sản phẩm mà còn tận dụng kỹ năng phân tích vấn đề để tối ưu hóa hiệu suất và đảm bảo tính bảo mật. Sự sáng tạo của họ đóng vai trò quan trọng trong việc đưa công nghệ lên tầm mới, đáp ứng nhanh chóng với thách thức của thị trường và nhu cầu người dùng. Với sự linh hoạt và khả năng làm việc nhóm, Software Developers đóng góp vào việc xây dựng tương lai số của chúng ta. Sự sáng tạo không ngừng và năng lực thích ứng của họ là động lực cho sự tiến bộ liên tục trong ngành công nghiệp phần mềm.",
+    "color": "#51992F"
+  },
+  {
+    "id": "UID",
+    "name": {
+      "en": "UI/UX Designer",
+      "vi": "Nhà thiết kế giao diện"
+    },
+    "description": "Ngành UI/UX Design là nơi sự nghệ thuật và công nghệ gặp gỡ để tạo ra trải nghiệm người dùng tuyệt vời. UI/UX Designers không chỉ tạo ra giao diện đẹp mắt mà còn đảm bảo sự tương tác mượt mà và tận dụng mọi chi tiết để cải thiện trải nghiệm người dùng. Với sự kết hợp giữa sự sáng tạo và nắm bắt yêu cầu người dùng, UI/UX Designers tạo ra các thiết kế không chỉ thú vị mà còn thực sự hữu ích. Họ phát triển wireframes, mockups, và prototypes để hiển thị cách sản phẩm sẽ hoạt động trong thực tế. Công việc của họ không chỉ dừng lại ở việc tạo ra giao diện, mà còn bao gồm việc hiểu rõ nhu cầu người dùng và liên tục tối ưu hóa trải nghiệm. UI/UX Designers đóng vai trò quan trọng trong việc đưa ra giải pháp sáng tạo và thân thiện với người dùng, làm tăng giá trị thực sự của sản phẩm trong thị trường ngày nay.",
+    "color": "#2F6699"
+  },
+  {
+    "id": "BA",
+    "name": {
+      "en": "Business Analyst",
+      "vi": "Chuyên viên phân tích nghiệp vụ"
+    },
+    "description": "Ngành Business Analyst trong lĩnh vực Công nghệ Thông tin là một bộ phận chiến lược quan trọng, nơi những chuyên gia này đóng vai trò như những \"thông dịch viên\" giữa doanh nghiệp và nhóm phát triển. Họ không chỉ phân tích nhu cầu kinh doanh mà còn định rõ yêu cầu kỹ thuật, giúp xác định và tối ưu hóa quy trình. Business Analysts trong lĩnh vực CNTT chủ động tìm kiếm giải pháp dựa trên dữ liệu và thông tin kỹ thuật, đảm bảo rằng các dự án phát triển đáp ứng đúng mục tiêu kinh doanh. Họ sử dụng công cụ phân tích dữ liệu và mô phỏng để hiểu rõ quy trình và đưa ra những đề xuất cải tiến. Với sự hiểu biết vững về CNTT và khả năng giao tiếp xuất sắc, Business Analysts trong lĩnh vực này giúp tạo ra sản phẩm và dịch vụ CNTT hiệu quả và thân thiện với người dùng. Đó là vai trò không thể phớt lờ, đóng góp quan trọng vào sự thành công và phát triển của doanh nghiệp trong môi trường kỹ thuật số ngày nay.",
+    "color": "#832F99"
+  },
+  {
+    "id": "AIE",
+    "name": {
+      "en": "AI Engineer",
+      "vi": "Kỹ sư trí tuệ nhân tạo"
+    },
+    "description": "Ngành AI Engineer đang nổi lên như một ngôi sao sáng trong lĩnh vực Công nghệ Thông tin. Những chuyên gia này chịu trách nhiệm phát triển và triển khai giải pháp trí tuệ nhân tạo, sử dụng các thuật toán và mô hình máy học để giải quyết các vấn đề phức tạp. AI Engineers là những kiến trúc sư có kiến thức sâu rộng về lập trình, toán học và thống kê. Họ xây dựng mô hình dự đoán, học máy, và thực hiện các dự án AI từ ý tưởng đến triển khai. Sự sáng tạo và khả năng giải quyết vấn đề là chìa khóa để tạo ra ứng dụng AI hiệu Với sự gia tăng về dữ liệu và tiến bộ trong lĩnh vực học máy, vai trò của AI Engineers trở nên ngày càng quan trọng. Họ không chỉ đưa ra các giải pháp thông minh mà còn định hình tương lai của công nghệ, từ xe tự lái đến hệ thống y tế thông minh. Là những người đóng góp chính vào sự tiến bộ của xã hội thông minh, AI Engineers là những nhà phát triển chủ chốt trong thế giới kỹ thuật số hiện đại.",
+    "color": "#CBAE16"
+  },
+  {
+    "id": "SysE",
+    "name": {
+      "en": "System Engineer",
+      "vi": "Kỹ sư hệ thống"
+    },
+    "description": "Ngành System Engineer là lĩnh vực quan trọng trong hệ thống Công nghệ Thông tin, nơi các chuyên gia này chịu trách nhiệm xây dựng, triển khai và duy trì hệ thống thông tin phức tạp. System Engineers không chỉ là những kỹ sư kỹ thuật mà còn là những nhà kiến trúc có tầm nhìn rộng, đảm bảo tính ổn định và an toàn của môi trường công nghệ. Họ quản lý cả phần cứng và phần mềm, đồng thời đảm bảo tích hợp mượt mà giữa các thành phần khác nhau. System Engineers đưa ra giải pháp cho vấn đề kỹ thuật, tối ưu hóa hiệu suất hệ thống, và đảm bảo rằng mọi công nghệ hoạt động hài hòa. Với khả năng giải quyết vấn đề và kiến thức đa dạng về hệ thống, System Engineers đóng vai trò quan trọng trong việc duy trì sự liên tục và an toàn của các doanh nghiệp trong môi trường số ngày nay. Sự đa nhiệm và khả năng làm việc nhóm của họ giúp định hình mạng lưới công nghệ phức tạp để đáp ứng những thách thức ngày càng đa dạng của thế giới kỹ thuật số.",
+    "color": "#06C2CE"
+  }
+]

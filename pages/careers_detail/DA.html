@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Analyst - ORIEN</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/login_form.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/font.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../css/pages/careers_detail.css"
+    />
+
+    <script src="../../src/popup.js"></script>
+
+    <script src="../../src/bootstrap.js"></script>
+
+    <style>
+      body {
+        background-color: #242424;
+      }
+
+      .primary-color {
+        color: #352973;
+      }
+    </style>
+  </head>
+  <body>
+    <!--NAV BAR-->
+    <nav class="flex space-between cross-center">
+      <img src="../../assets/logo.svg" class="cursor-pointer" />
+
+      <div id="nav-items" class="flex space-evenly">
+        <a class="parent-hover cursor-pointer" href="/">
+          <p>TRANG CHỦ</p>
+          <div id="nav-items-underline"></div>
+        </a>
+        <a
+          class="parent-hover cursor-pointer"
+          href="../../pages/careers/DA.html"
+        >
+          <p>NGÀNH NGHỀ</p>
+          <div id="nav-items-underline" class="display-on-parent-hover"></div>
+        </a>
+        <div class="parent-hover cursor-pointer">
+          <p>VIỆC LÀM</p>
+          <div id="nav-items-underline" class="display-on-parent-hover"></div>
+        </div>
+        <div class="parent-hover cursor-pointer">
+          <p>LIÊN HỆ</p>
+          <div id="nav-items-underline" class="display-on-parent-hover"></div>
+        </div>
+      </div>
+
+      <img
+        src="../../assets/user.svg"
+        class="cursor-pointer"
+        onclick="showPopup('login-form')"
+      />
+    </nav>
+
+    <!--LOGIN FORM-->
+    <div id="login-form-overlay" class="overlay no-margin no-padding">
+      <form
+        id="login-form"
+        class="column full-width text-center vertical-spacing-1 center"
+      >
+        <h3 class="center text-center no-margin">ĐĂNG NHẬP</h3>
+        <input
+          id="username"
+          placeholder="Tên đăng nhập"
+          required
+          class="input center"
+        />
+        <input
+          id="password"
+          placeholder="Mật khẩu"
+          type="password"
+          required
+          class="input"
+        />
+        <button id="login-button" type="submit" class="button cursor-pointer">
+          Đăng nhập
+        </button>
+        <p class="underline cursor-pointer no-margin" onclick="showRegister()">
+          Chưa có tài khoản? Đăng ký ngay.
+        </p>
+        <p class="underline cursor-pointer no-margin">Quên mật khẩu?</p>
+        <img
+          class="max-content opacity-10 cursor-pointer"
+          src="./assets/icons/exit.svg"
+          onclick="closePopup('login-form')"
+        />
+      </form>
+    </div>
+
+    <!--REGISTER FORM-->
+    <div id="register-form-overlay" class="overlay no-margin no-padding">
+      <form
+        id="register-form"
+        class="column full-width text-center vertical-spacing-1 center"
+      >
+        <h3 class="center text-center no-margin">ĐĂNG KÝ TÀI KHOẢN</h3>
+        <input
+          id="username"
+          placeholder="Tên đăng nhập"
+          required
+          class="input center"
+        />
+        <input id="email" placeholder="Email" required class="input center" />
+        <input
+          id="password"
+          placeholder="Mật khẩu"
+          required
+          class="input center"
+          type="password"
+        />
+        <input
+          id="repassword"
+          placeholder="Mật khẩu"
+          required
+          class="input center"
+          type="password"
+        />
+        <button
+          id="register-button"
+          type="submit"
+          class="button cursor-pointer"
+        >
+          ĐĂNG KÝ
+        </button>
+        <p class="underline cursor-pointer no-margin" onclick="showLogin()">
+          Quay về đăng nhập
+        </p>
+        <img
+          class="max-content opacity-10 cursor-pointer"
+          src="./assets/icons/exit.svg"
+          onclick="closePopup('register-form')"
+        />
+      </form>
+    </div>
+
+    <script>
+      function showRegister() {
+        closePopup('login-form');
+        showPopup('register-form');
+      }
+
+      function showLogin() {
+        closePopup('register-form');
+        showPopup('login-form');
+      }
+    </script>
+
+    <div id="content-div">
+      <a id="back_button" class="cursor-pointer" href="/pages/careers/DA.html">
+        <img src="../../assets/icons/arrow-left-circle.png" />
+      </a>
+
+      <div id="content" class="column">
+        <h1 class="primary-color">DATA ANALYST</h1>
+        <h2 class="primary-color">CHUYÊN VIÊN PHÂN TÍCH DỮ LIỆU</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/sx4XSZheYgM"
+          title="Ai là người phù hợp làm nghề Data Analyst?| Hướng nội, không giỏi toán.... có làm được không?"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <p class="column cross-center">
+          Thực tế là các doanh nghiệp ngày càng dựa vào dữ liệu để đưa ra những
+          quyết định kinh doanh quan trọng, từ phát triển sản phẩm mới, thâm
+          nhập thị trường, quản lý ngân sách cho đến chăm sóc khách hàng. Chính
+          điều này đã khiến những công việc liên quan đến dữ liệu như Data
+          Analyst trở thành những ngành “khát” nhân lực. Cơ hội việc làm đa dạng
+          và thu nhập tương đối tốt khiến nhiều ứng viên quan tâm đến công việc
+          này. Vậy Data Analyst là gì? Công việc của Data Analyst như thế nào?
+          <br /><br /><b>1. Data Analyst là gì?</b><br />Data Analyst (hay nhà
+          phân tích dữ liệu) là những chuyên gia đại diện cho tiếng nói của dữ
+          liệu. Nhiệm vụ của họ là thực hiện phân tích chuyên sâu (hay còn gọi
+          là phân tích sâu) để cung cấp những hiểu biết sâu sắc, nhằm hỗ trợ ra
+          quyết định và kế hoạch của ban lãnh đạo doanh nghiệp. Với bất kỳ doanh
+          nghiệp, quy mô nào chăng nữa thì vai trò của họ đều có tầm quan trọng
+          rất lớn.<br /><br />Các nhà phân tích dữ liệu thường sử dụng các kỹ
+          năng SQL để truy xuất dữ liệu từ cơ sở dữ liệu của công ty, sau đó sử
+          dụng chuyên môn của mình để đảm bảo tính chính xác dữ liệu thu thập
+          được. Tiếp theo là sử dụng kỹ năng lập trình để phân tích dữ liệu đó
+          và sử dụng các kỹ năng chuyên môn để tạo báo cáo kết quả trình lên cấp
+          trên. Điều này sẽ giúp ban lãnh đạo doanh nghiệp đưa ra các quyết định
+          hoặc định hướng phát triển phù hợp. <br /><br /><b
+            >2. Những thuận lợi và khó khăn của Data Analyst</b
+          ><br /><br />• Thuận lợi:<br />Mức lương khởi điểm tương đối cao<br />Được
+          làm việc trong môi trường hiện đại và thường xuyên được tiếp cận những
+          thông tin xu hướng trong xã hội<br />Có nhiều cơ hội thăng tiến với
+          mức lương cao nếu chăm chỉ, có sự sáng tạo và biết sử dụng thành thạo
+          các công cụ<br />Chỉ cần nắm cơ bản kỹ năng lập trình là có thể làm
+          tốt công việc<br /><br />• Khó khăn:<br />Data Analyst cần phải có góc
+          nhìn rộng và khách quan để nhìn ra vấn đề của doanh nghiệp<br />Phải
+          luyện tập quan sát và phân tích trong khoảng thời gian dài để có thể
+          làm tốt<br />Công việc đòi hỏi khả năng tư duy logic cao, phân tích
+          sâu sắc từng chi tiết mới có thể tìm ra và giải quyết được vấn đề.<br />Việc
+          lọc dữ liệu thô sẽ rất khó khăn và gây mất thời gian vì có lượng dữ
+          liệu trong ngành này rất lớn và dữ liệu lỗi cũng rất nhiều.<br />Xem
+          thêm: Lập trình viên là gì? Công việc của một lập trình viên<br /><br /><b
+            >3. Phân biệt Data Analyst và Data Scientist</b
+          ><br />Data Scientist rất hay bị mọi người nhầm lẫn với Data Analyst.
+          Cả hai công việc đều làm việc với dữ liệu và các con số, tuy nhiên
+          chúng vẫn có những nhiệm vụ, vai trò riêng của mình.<br /><br />Data
+          Scientist là người nghiên cứu dữ liệu, họ có nhiệm vụ phân tích và tìm
+          hiểu sâu về vấn đề của doanh nghiệp, đồng thời trao đổi với các nhà
+          lãnh đạo và tìm ra hướng đi giải quyết. Sau đó, họ sẽ triển khai giải
+          pháp cho các bộ phận liên quan. Trong khi đó, Data Analyst là chuyên
+          viên phân tích dữ liệu, họ thường ít phải suy nghĩ về chiến lược hơn.
+          Công việc của họ tập trung vào nhiệm vụ cụ thể liên quan đến các vấn
+          đề đã được xác định trước. Họ thu thập, đọc và lọc dữ liệu thô, sau đó
+          phân tích để trả lời các câu hỏi cũng như giải quyết những vấn đề đã
+          được đưa ra.<br /><br /><b>4. Tiềm năng của ngành Data Analyst</b
+          ><br /><b>4.1 Tăng trưởng nghề nghiệp</b><br />Theo thống kê ở thị
+          trường Việt Nam, ngành phân tích dữ liệu là ngành phát triển nhất năm
+          2022 so với các khối ngành công nghệ. Theo nghiên cứu của Cục thống kê
+          Lao động thì mức độ tăng trưởng của ngành phân tích dữ liệu có thể đạt
+          đến 19% trong năm 2024.<br /><br /><b>4.2 Nhu cầu</b><br />Nhu cầu sử
+          dụng dữ liệu trong công việc ngày càng cao trong việc đưa ra những
+          chiến lược kinh doanh hợp lý cho doanh nghiệp. Lượng dữ liệu thu thập
+          được cũng ngày càng nhiều nhưng nó có mang lại giá trị cho doanh
+          nghiệp hay không còn phụ thuộc vào khả năng phân tích, chuyển đổi của
+          các Data Analyst.<br /><br />Vị trí Data Analyst (chuyên viên phân
+          tích dữ liệu) có mặt trong hầu hết các sơ đồ hoạt động của các công ty
+          thuộc khối ngành kinh tế - công nghiệp. Bất kỳ công ty nào sử dụng dữ
+          liệu đều cần các Data Analyst xử lý phần thông tin thô đó để nó mang
+          lại giá trị cho doanh nghiệp. Do đó mà nhu cầu về nguồn nhân lực có
+          kinh nghiệm cùng chuyên môn cao cũng ngày càng tăng.<br /><br /><b
+            >4.3 Thu nhập</b
+          ><br />Thu nhập của một Data Analyst là khá cao so với mặt bằng chung,
+          kể cả những người chưa có quá nhiều kinh nghiệm.<br /><br /><b
+            >4.4 Lợi thế cạnh tranh</b
+          ><br />Khả năng phân tích thông tin từ dữ liệu thu thập được là một
+          lợi thế cạnh tranh tuyệt vời, giúp hỗ trợ các Data Analyst trong việc
+          đưa ra quyết định chính xác và cải thiện hiệu suất làm việc của doanh
+          nghiệp. Điều này cũng mang lại cơ hội tăng thu nhập cho bạn.<br /><br />
+          <img
+            style="width: 50%"
+            src="https://images.careerbuilder.vn/content/images/ky-nang-tao-dashboard-careerbuilder.jpg"
+          /><b>5. Học Data Analysis ra làm gì?</b><br />Data analyst: là những
+          chuyên viên phân tích dữ liệu chịu trách nhiệm thu thập và phân tích
+          một số lượng lớn dữ liệu thô để chuyển chúng thành những dữ liệu có
+          ích, hỗ trợ các doanh nghiệp đưa ra chiến lược phát triển chính xác
+          nhất trong tương lai.<br /><br />Business Analyst: Công việc của các
+          business analyst là xác định đâu là dữ liệu có giá trị trong số các dữ
+          liệu được thu thập. Sau đó trao đổi trực tiếp với ban lãnh đạo cấp cao
+          và đưa ra những dự đoán về định hướng phát triển của công ty trong
+          tương lai. Họ sẽ chịu trách nhiệm cho những dự đoán của mình cũng như
+          quản lý rủi ro cho các định hướng mà họ đã đề xuất.<br /><br />Quantitative
+          Analysis: những nhà phân tích định lượng là những chuyên gia phân
+          tích, họ thường chuyên về các lĩnh vực có liên quan đến tài chính như
+          định giá, quản lý rủi ro, quản lý đầu tư,...<br /><br />Digital
+          Marketer: công việc chủ yếu là xác định sự thay đổi của các xu hướng,
+          phân tích hành vi người tiêu dùng và theo dõi các chỉ số đo lường, từ
+          đó đề xuất được chiến lược marketing phù hợp, đánh trúng tâm lý của
+          người tiêu dùng.<br /><br />Product manager: còn gọi là các nhà quản
+          lý sản phẩm, công việc của họ là điều hành và hướng dẫn cho sự ra đời
+          và phát triển của các dòng sản phẩm từ khâu lên ý tưởng đến khi được
+          phát hành và đến tay người tiêu dùng.<br /><br /><b
+            >6. Những ngành nghề có nhu cầu tuyển Data Analyst cao</b
+          ><br />Với sự phát triển của của công nghệ, các công ty có nhiều cơ
+          hội tìm hiểu thêm về khách hàng, thị trường và đối thủ cạnh tranh của
+          mình. Tuy nhiên, việc chắt lọc những thông tin có giá trị và đưa ra
+          đánh giá để định hướng phát triển của công ty thì không đơn giản. Vì
+          vậy, nhiều công ty sẽ thuê các nhân viên phân tích dữ liệu, những
+          người có kinh nghiệm chuyên môn và nhạy cảm với sự biến động của thị
+          trường. <br /><br />Đặc biệt, nhu cầu tuyển dụng nhân viên phân tích
+          dữ liệu trong các lĩnh vực dưới đây rất cao:<br /><br />- Ngành tài
+          chính, ngân hàng.<br />- Phát triển mạng xã hội hoặc phát triển phần
+          mềm.<br />- Truyền thông, marketing.<br />- Tư vấn tài chính, bảo hiểm
+          hoặc bảo hiểm.<br />- Các công ty startup chuyên về công nghệ, viễn
+          thông.<br />- Các ngành liên quan đến hóa học và điều chế như: hóa
+          học, hóa mỹ phẩm.<br />- Công nghiệp sản xuất và lắp ráp.<br />- Công
+          ty giáo dục như các trường đại học, trường đại học, học viện, viện
+          nghiên cứu.<br /><br /><b>7. Mô tả công việc của Data Analyst</b
+          ><br />Nếu muốn ứng tuyển công việc Data Analysis, chắc chắn bạn nên
+          đọc mô tả công việc dưới đây. Tuy các yêu cầu lý thuyết và kinh nghiệm
+          thực tế có sự khác biệt, nhưng đây vẫn là những công việc chung mà một
+          Data Analyst đảm nhiệm:<br /><br /><b>7.1 Thu thập dữ liệu</b
+          ><br />Với lượng dữ liệu khổng lồ và vô cùng đa dạng từ tất cả các
+          nguồn trên Internet hay các mẫu khảo sát ý kiến khách hàng, Data
+          Analyst có nhiệm vụ phải thu thập đúng dữ liệu của vấn đề đang nghiên
+          cứu từ những nền tảng đó. Dữ liệu có thể ở nhiều dạng khác nhau như
+          dạng chữ, dạng số, dạng hình ảnh,... Tùy vào nhu cầu của dự án yêu cầu
+          mà chọn loại dữ liệu phù hợp.<br /><br /><b
+            >7.2 Xử lý và phân tích dữ liệu</b
+          ><br />Sau khi hoàn tất thu thập, dữ liệu thô cần được lọc và loại bỏ
+          để tạo thành bộ dữ liệu chuẩn. Bước tiếp theo là phân tích dữ liệu thô
+          bằng các công cụ thống kê như SPSS, SQL hoặc STATA. Những kết quả phân
+          tích sẽ cung cấp những con số thống kê liên quan đến từng câu hỏi.<br /><br /><b
+            >7.3 Thiết kế báo cáo</b
+          ><br />Data Analyst cần tư duy và vận dụng kỹ năng làm báo cáo của
+          mình để chuyển đổi từ con số sang dạng biểu đồ và hình ảnh trực quan.
+          Có thể sử dụng các công cụ hỗ trợ giúp tăng năng suất làm báo cáo.
+          Quan trọng nhất là việc tìm ra những phát hiện quan trọng, có ích từ
+          các con số thống kê để báo cáo cho doanh nghiệp.<br /><br /><b
+            >7.4 Tư vấn cho doanh nghiệp</b
+          ><br />Nhân viên Data Analyst sau khi hoàn thành báo cáo cần báo lại
+          cho doanh nghiệp, giải thích rõ các vấn đề đã phát hiện giúp ban lãnh
+          đạo nhìn ra thực trạng một cách rõ ràng. Việc này sẽ giúp doanh nghiệp
+          sẽ đưa ra hướng đi đúng đắn trong hiện tại và tương lai<br /><br /><b
+            >7.5 Hoàn thành các công việc được phân công</b
+          ><br />Trong trường hợp báo cáo của bạn chưa đạt tiêu chuẩn thì ban
+          lãnh đạo sẽ yêu cầu bạn chỉnh sửa và bổ sung những thứ còn thiếu. Hãy
+          tiếp tục hoàn thành nó một cách tốt hơn nhé!<br /><br />
+          <img
+            style="width: 50%"
+            src="https://images.careerbuilder.vn/content/images/co-hoi-nghe-nghiep-data-analyst-careerbuilder.jpg"
+          />
+          <b
+            >8. Những yếu tố cần có để trở thành một Data Analyst chuyên
+            nghiệp</b
+          ><br /><b>8.1 Nắm vững kiến thức chuyên ngành</b><br />Vậy kiến thức
+          chuyên ngành của các nhà phân tích dữ liệu là gì? Câu trả lời là không
+          có kiến thức cụ thể nào. Điều này có nghĩa là bạn hiểu rõ các yếu tố
+          bên trong và bên ngoài lĩnh vực hoạt động của công ty mà bạn đang làm
+          việc. <br /><br />Ví dụ, nếu bạn làm việc cho một công ty có cửa hàng
+          trực tuyến, bạn cần hiểu chi tiết về thương mại điện tử. Ngược lại,
+          khi phân tích dữ liệu cho một công ty cơ khí, bạn sẽ cần phải hiểu về
+          hệ thống cơ khí và cách thức hoạt động của chúng.<br /><br />Khám phá
+          công việc Data Analyst - Nghề của <br />Bạn cần hiểu rõ các yếu tố bên
+          trong và bên ngoài lĩnh vực hoạt động của công ty<br /><br /><b
+            >8.2 Kỹ năng Data Cleaning và Data Preparation</b
+          ><br />Nghiên cứu cho thấy công việc thường ngày của nhà phân tích dữ
+          liệu có đến khoảng 80% là data cleaning và data preparation. Nếu bạn
+          nghiêm túc tìm kiếm việc làm Data Analyst thì kỹ năng liệt kê và chắt
+          lọc dữ liệu là rất quan trọng.<br /><br />Thông thường, một nhà phân
+          tích dữ liệu cần trích xuất dữ liệu (hay còn gọi là data preparation)
+          từ một hoặc nhiều nguồn và chuẩn bị cho việc phân tích. Data cleaning
+          cũng có nghĩa là kiểm tra, xử lý dữ liệu bị thiếu và không nhất quán
+          tránh thể ảnh hưởng đến kết quả phân tích.<br /><br /><b
+            >8.3 Kỹ năng Data Analysis và Data Exploration</b
+          ><br />Để trở thành một nhà phân tích dữ liệu giỏi, tất nhiên, trước
+          tiên bạn phải nắm vững các kỹ năng Data Analysis. Về cơ bản, các kỹ
+          năng phân tích dữ liệu là chuyển đổi một vấn đề hoặc nhu cầu kinh
+          doanh thành dữ liệu. Sau đó bạn phân tích, biến đổi để đưa ra hướng
+          giải quyết cho vấn đề đó.<br /><br />Data Exploration có thể được xem
+          như một hình thức phân tích dữ liệu. Kỹ năng này đòi hỏi bạn phải biết
+          cách nắm bắt các xu hướng hoặc mối quan hệ trong dữ liệu mang lại giá
+          trị cho doanh nghiệp. Bằng cách quan sát và phân tích đặc điểm dữ liệu
+          có thể giúp doanh nghiệp giảm thiểu rủi ro và chi phí.<br /><br />Khám
+          phá công việc Data Analyst - Nghề của <br />Data Analysis và Data
+          Exploration là gì?<br /><br /><b>8.4 Kỹ năng phân tích logic</b
+          ><br />Kỹ năng phân tích logic chính là nền tảng vững chắc đối với các
+          nhà phân tích dữ liệu. Khả năng này đặc biệt hữu ích cho việc phân
+          tích và khai thác, đồng thời giúp bạn có thể dễ dàng xử lý dữ liệu.<br /><br />Ngoài
+          ra, khả năng phân tích và tư duy logic sẽ đảm bảo bản báo cáo của bạn
+          tránh được các lỗi ngụy biện và lỗi logic phổ biến.<br /><br /><b
+            >8.5 Kỹ năng tạo Dashboard và báo cáo</b
+          ><br />Nhà phân tích dữ liệu cần hợp tác cùng các bộ phận khác trong
+          tổ chức khi sử dụng dữ liệu để đưa ra các quyết định quan trọng. Việc
+          tạo dashboard sẽ cho phép mọi người tiếp cận dữ liệu quan trọng mà
+          không cần các kiến thức chuyên môn về kỹ thuật.<br /><br />Dashboard
+          và báo cáo bao gồm các biểu đồ và bảng đơn giản với bộ lọc theo ngày
+          cho đến các bảng biểu tổng quan lớn phức tạp với hàng trăm thông tin
+          dữ liệu được cập nhật tự động. Tuy yêu cầu công việc vị trí này giữa
+          các doanh nghiệp có thể khác nhau, nhưng hầu hết công việc của nhân
+          viên phân tích dữ liệu đều liên quan đến việc tạo dashboard, báo
+          cáo.<br /><br />Khám phá công việc Data Analyst - Nghề của <br />Phần
+          lớn công việc của nhân viên phân tích dữ liệu sẽ gắn liền với
+          dashboard<br /><br /><b>8.6 Kỹ năng giao tiếp</b><br />Giao tiếp là
+          chìa khóa để bạn có thể làm việc với đồng nghiệp. Bạn sẽ phải làm việc
+          với nhiều bộ phận để thu thập dữ liệu và trình bày kết quả báo cáo.
+          Bạn cũng cần sự hỗ trợ của nhiều đơn vị khác nhau để công việc được
+          hoàn thành một cách tốt nhất.<br /><br />Đây có thể là một kỹ năng
+          “mềm”, nhưng bạn đừng đánh giá thấp việc giao tiếp. Cho dù bạn có kỹ
+          năng phân tích tốt đến đâu cũng là vô giá trị nếu bạn không thể phân
+          tích cho đồng nghiệp hiểu và thuyết phục họ làm theo ý tưởng của
+          bạn.<br /><br /><b
+            >8.7 Khả năng tập trung cao độ, cẩn trọng, chú ý đến chi tiết</b
+          ><br />Ngành nghề nào cũng cần chú ý đến chi tiết, đương nhiên điều
+          này càng đặc biệt quan trọng hơn đối với các ngành liên quan đến số
+          liệu. Bất cứ lỗi nhỏ nào trong quá trình làm việc cũng có thể ảnh
+          hưởng đến tính chất lượng và tính chính xác của kết quả báo cáo. Ngoài
+          ra, những tiểu tiết nhỏ nhặt nhất cũng có thể là thứ quan trọng nhất.
+          Vì vậy, các ứng viên hãy rèn luyện khả năng này trước khi ứng tuyển
+          nhé!<br /><br /><b
+            >8.8 Kỹ năng quản lý thời gian và sắp xếp công việc</b
+          ><br />Data Analyst đòi hỏi bạn phải làm việc với khối lượng công việc
+          rất lớn. Để hoàn thành công việc bắt buộc phải trải qua nhiều bước và
+          nhiều giai đoạn khác nhau. Vì thế, việc quản lý thời gian và sắp xếp
+          công việc của bản thân là rất quan trọng để đảm bảo tiến độ chung.<br /><br /><b
+            >8.9 Yêu thích việc làm với máy tính và những con số</b
+          ><br />Vì tính chất công việc, một Data Analyst bắt buộc phải làm việc
+          trước máy tính và những con số với tần suất cao. Do đó, bạn hãy tạo
+          cho mình một sự yêu thích nhất định đối với công việc để không cảm
+          thấy chán nản và mệt mỏi nhé!<br /><br /><b>8.10 Ham học hỏi</b
+          ><br />Siêng năng và ham học hỏi là điều không thể thiếu dù ở bất kỳ
+          ngành nghề nào và Data Analyst cũng không ngoại lệ. Kỹ năng này sẽ
+          giúp bạn cập nhật kiến thức mới để cải thiện khả năng phân tích, đưa
+          ra những dữ liệu có ích nhất và mang lại hiệu quả cao hơn trong công
+          việc.<br />
+        </p>
+        <h3 class="primary-color">Danh sách các môn học bổ trợ</h3>
+        <table>
+          <tr>
+            <th>STT</th>
+            <th>Tên học phần</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Lập trình Python</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Cơ sở dữ liệu</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Hệ thống thông tin quản lý</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Lập trình phân tích dữ liệu</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Lập trình cơ bản</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Power BI</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Kế toán máy</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Ứng dụng cơ sở dữ liệu</td>
+          </tr>
+        </table>
+        <h3 class="primary-color">
+          Người trong nghề Chuyên viên phân tích dữ liệu nổi bật
+        </h3>
+        <div class="flex space-evenly flex-wrap" style="width: 100%">
+          <div class="flex cross-center">
+            <img
+              class="user-avatar cover"
+              src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/311112601_3397647817136846_8192480526979887631_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=CdfbVFHNHykAX-gkh5Y&_nc_ht=scontent.fhan2-4.fna&oh=00_AfBvGW2FQn4gv91abrJ6HoxvIe90hlAc0eqNQg5ms6HqGw&oe=6552EDD2"
+            />
+            <div class="user-info">
+              <h4 class="user-name">Trần Thị Quỳnh Nga</h4>
+              <h5 class="user-desc">
+                Sinh viên khóa 62 ngành Hệ thống thông tin quản lý <br />Nguyên
+                Phó bí thư LCĐ Viện CNTT và KTS, NEU
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!--FOOTER-->
+  <footer>
+    <div>
+      <p><b>ORIEN</b><br />DEFINE YOUR OWN WAY</p>
+    </div>
+    <div>
+      <p class="text-center" style="color: rgba(255, 255, 255, 0.5)">
+        Copyright by Pham Van Linh @ WD_2023<br />National Economics University
+      </p>
+    </div>
+    <div>
+      <p class="text-right">
+        <b>LIÊN HỆ</b><br />
+        f: facebook.com/pvlinh.neu<br />
+        p: 0787 097 309<br />
+        e: pvlinh.sitde@gmail.com<br />
+      </p>
+    </div>
+  </footer>
+</html>
